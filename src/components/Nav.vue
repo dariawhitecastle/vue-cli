@@ -30,6 +30,11 @@ a {
   transition: color 0.3s ease;
   text-decoration: none;
   color: #1c1d22;
+  &.router-link-exact-active {
+    color: #741166;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #741166;
+  }
 }
 
 a:hover {

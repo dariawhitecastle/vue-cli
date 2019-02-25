@@ -1,14 +1,14 @@
+
 const projects = [
   {
     id: 1,
     title: 'Wanderers',
-    description:
-      'Explore the Solar System in virtual reality and enjoy stunning hi-res images',
+    description: 'Explore the Solar System in virtual reality and enjoy stunning hi-res images',
     descriptionBody:
       'Solo project created with Three.js, Css animations and Express server.\
       Working on this project allowed me to learn various aspects of WebGL, manipulating objects\
       on Canvas and mapping data to visual display of objects.',
-    imgUrl: './assets/wanderers_logo.png',
+    imgUrl: 'wanderersLogo',
     projectUrl: 'https://wanderers-interactive.com/',
   },
   {
@@ -20,7 +20,7 @@ const projects = [
       'As a UI developer on the Experiece Team at Baker Technologies I utilized React/Redux technologies to create a styled interfaced \
     to provide online shoppers with various filtering, sorting and viewing options for the specific products at different stores across the US and Canada.\
     Other tech used in the project are REST API, GraphQL/Apollo, Scss/Css/Keyframe animations, Webpack/Babel',
-    imgUrl: './assets/baker_shop.png',
+    imgUrl: 'bakerShop',
     projectUrl: 'https://app.trybaker.com/location',
   },
   {
@@ -31,8 +31,8 @@ const projects = [
        and reusable components to handle complex user input, asynchronous actions (submit, save), loading state, modals 
        and dynamically updated dialogue windows. Complex state manipulations were handled using a combination or Redux 
        and Apollo with React for the view layer`,
-    imgUrl: './assets/baker_form.png',
-    projectUrl: './assets/bakerForm.mp4',
+    imgUrl: 'bakerForm',
+    projectUrl: '../assets/img/bakerForm.mp4',
   },
   {
     id: 4,
@@ -42,8 +42,8 @@ const projects = [
     descriptionBody: `Solo front-end developer responsible for architecture, implementation, writing tests and adding components to 
       Storybook for future use. Project involved creating charts, displaying a table with multiple campaigns per month, 
       creating and updating a calendar, and adding animations for smooth user experience `,
-    imgUrl: './assets/sample_dash.png',
-    projectUrl: './assets/bakerForm.mp4',
+    imgUrl: 'sampleDash',
+    projectUrl: '../assets/img//bakerForm.mp4',
   },
   {
     id: 5,
@@ -52,8 +52,8 @@ const projects = [
     descriptionBody: `As a full stack developer I was involved in full system design conversations, bridging the gap between
     front end architecture, user experience, business requirements and database management. Working on a lean team of 2 developers,
     we built an easy to use, scalable application with Node, Vue/Vuex and MySQL. `,
-    imgUrl: './assets/request_wizard.png',
-    projectUrl: './assets/requestWizard.mp4',
+    imgUrl: 'requestWizard',
+    projectUrl: '../assets/img/requestWizard.mp4',
   },
 ];
 

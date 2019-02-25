@@ -13,11 +13,11 @@
               <span><span class="landing-tagline__italic">A</span>dventurous </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-2">
-              <span key='2'><span class="landing-tagline__italic anim-2">W</span>arm </span>
+              <span key='2'><span class="landing-tagline__italic">W</span>arm </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-3">
               <span class="anim-3" key='3'>
-                <span class="landing-tagline__italic anim-3">E</span>xploring</span>
+                <span class="landing-tagline__italic">E</span>xploring</span>
             </transition>
           </div>
         </div>
@@ -45,6 +45,13 @@ export default class Home extends Vue {}
 $tuesday-night: 'Tuesday night', sans-serif;
 $beau: 'Beau', sans-serif;
 
+.landing {
+  background: url('../assets/img/bw_bench.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+}
 .landing-tagline {
   font-family: $beau;
   letter-spacing: 2px;
@@ -112,8 +119,8 @@ $beau: 'Beau', sans-serif;
 .title-small {
   position: relative;
   font-size: 30px;
-  bottom: 45%;
-  left: 17%;
+  bottom: 52%;
+  left: 20%;
 }
 .users {
   list-style: none;
