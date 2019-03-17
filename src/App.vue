@@ -1,10 +1,23 @@
 <template>
   <div id="app">
-    <router-view/>
+    <transition appear name="fade">
+      <router-view/>
+    </transition>  
   </div>
 </template>
 
 <style lang="scss">
+.fade-enter-active, .fade-leave-active {
+  transition-property: opacity;
+  transition-duration: .25s;
+}
+.fade-enter-active {
+  transition-delay: .25s;
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
 // #nav {
 //   padding: 30px;
 //   a {

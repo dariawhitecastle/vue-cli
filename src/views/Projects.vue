@@ -3,18 +3,21 @@
       <div class="landing-inner">
         <Nav class="nav"/>
         <section
-          v-for="project in projects"
+          v-for="project in filteredProjects"
           :key="project.id"
-          v-if='project.id === currentProject.id'
           class="section">
           <div  class="section__content">
             <h3 class="section__title">{{ project.title }}</h3>
-            <h5 class="section__description">
-              {{ project.description }}
-            </h5>
-          <p class='section__description-text'>
-            {{ project.descriptionBody }}
-          </p>
+             <transition appear name="slide-fade-right" >
+              <h5 class="section__description">
+                {{ project.description }}
+              </h5>
+             </transition>
+            <transition appear name="slide-fade-right" appear-active-class='contenAppearClass-2'>
+              <p class='section__description-text'>
+                {{ project.descriptionBody }}
+              </p>
+            </transition>
           </div>
           <div class="section__img">
             <img :src="getImage(project.imgUrl)" class="section__img-inner"/>
@@ -57,6 +60,10 @@ export default class Projects extends Vue {
   };
 
   projects = projects;
+
+  get filteredProjects() {
+    return projects.filter(project => project.id === this.currentProject.id);
+  }
 
   getImage(imgUrl) {
     return this.images[imgUrl];
@@ -103,6 +110,19 @@ main {
 }
 .nav {
   grid-area: header-nav;
+}
+.slide-fade-right-enter-active, .contenAppearClass-2 {
+  transition: all .5s ease;
+}
+.slide-fade-right-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-right-enter, .slide-fade-right-leave-to {
+  transform: translateX(-50px);
+  opacity: 0;
+}
+.contenAppearClass-2 {
+   transition-delay: 0.3s;
 }
 .section__title {
   font-size: 45px;

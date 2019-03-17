@@ -26,7 +26,7 @@
   </div>
 </template>
 
-<script lang="ts">
+<script>
 import { Component, Vue } from 'vue-property-decorator';
 import Nav from '@/components/Nav.vue'; // @ is an alias to /src
 
