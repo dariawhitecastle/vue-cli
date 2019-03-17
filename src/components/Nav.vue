@@ -4,8 +4,6 @@
     <li> / <li>
     <li><router-link to="/projects">Projects</router-link></li>
     <li> / <li>
-    <li><router-link to="/links">Links </router-link></li>
-    <li> / <li>
     <li><router-link to="/contact">Collaborate </router-link></li>
   </ul>
 </template>
