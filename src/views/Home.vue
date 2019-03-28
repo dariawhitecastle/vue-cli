@@ -10,14 +10,18 @@
           </div>
           <div class="landing-tagline">
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-1">
-              <span><span class="landing-tagline__italic">A</span>dventurous </span>
+              <span><span class="landing-tagline__italic">A</span>udacious </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-2">
-              <span key='2'><span class="landing-tagline__italic">W</span>arm </span>
+              <span key='2'><span class="landing-tagline__italic">W</span>himsical </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-3">
-              <span class="anim-3" key='3'>
-                <span class="landing-tagline__italic">E</span>xploring</span>
+              <span key='3'>
+                <span class="landing-tagline__italic">E</span>ccentric</span>
+            </transition>
+            <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-4">
+              <span key='4'>
+                <span class="landing-tagline__italic">C</span>raftswoman</span>
             </transition>
           </div>
         </div>
@@ -58,7 +62,7 @@ $beau: 'Beau', sans-serif;
   font-size: 1.5em;
   position: relative;
   top: 25%;
-  left: 35%;
+  left: 26%;
 }
 
 .landing-tagline__italic {
@@ -68,7 +72,8 @@ $beau: 'Beau', sans-serif;
 }
 .fadeInEnterActive-1,
 .fadeInEnterActive-2,
-.fadeInEnterActive-3 {
+.fadeInEnterActive-3,
+.fadeInEnterActive-4 {
   transition: opacity 0.25s ease-in;
 }
 .fadeIn {
@@ -80,6 +85,9 @@ $beau: 'Beau', sans-serif;
 }
 .fadeInEnterActive-3 {
   transition-delay: 0.8s;
+}
+.fadeInEnterActive-4 {
+  transition-delay: 1.2s;
 }
 .title-section {
   font-family: $tuesday-night, sans-serif;
