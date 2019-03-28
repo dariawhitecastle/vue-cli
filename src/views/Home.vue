@@ -54,11 +54,11 @@ $tuesday-night: 'Tuesday night', sans-serif;
 $beau: 'Beau', sans-serif;
 
 .landing {
-  background: url('../assets/img/bw_bench.jpg') no-repeat center center fixed;
-  background-size: cover;
+  background: url('../assets/img/Stroke-6.png') no-repeat center center fixed;
+  background-size: contain;
   height: 100vh;
   width: 100vw;
-  position: fixed;
+ 
 }
 .landing-tagline {
   font-family: $beau;
@@ -101,13 +101,11 @@ $beau: 'Beau', sans-serif;
   height: 1290px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
-  opacity: 0.2;
 }
 .title-splash1 {
   position: absolute;
   top: -2%;
   left: 10%;
-  opacity: 0.7;
   height: 300px;
   transform: rotate(90deg);
 }
@@ -115,7 +113,6 @@ $beau: 'Beau', sans-serif;
   position: absolute;
   bottom: 5%;
   right: 10%;
-  opacity: 0.7;
   height: 300px;
   transform: rotate(90deg);
 }
@@ -131,19 +128,20 @@ $beau: 'Beau', sans-serif;
 .title {
   white-space: nowrap;
   font-weight: unset;
-  letter-spacing: 3px;
-  font-size: 100px;
+  letter-spacing: 5px;
+  font-size: 125px;
   position: relative;
-  top: 20%;
-  right: 35%;
+  right: 57%;
   transform: translateY(-50%);
   color: hsla(314, 42%, 11%, 1);
 }
 .title-small {
   position: relative;
-  font-size: 30px;
-  bottom: 52%;
-  left: 20%;
+  letter-spacing: 3px;
+  white-space: nowrap;
+  font-size: 45px;
+  bottom: 80%;
+  margin: auto;
 }
 .users {
   list-style: none;
