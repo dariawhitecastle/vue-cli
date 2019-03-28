@@ -4,6 +4,10 @@
       <main class="landing">
         <div class="landing-inner">
           <Nav/>
+          <img class="title-frame" src="../assets/img/geo1.png"/>
+          <img class="title-splash1" src="../assets/img/splash1.png"/>
+          <img class="title-splash1" src="../assets/img/splashsilver.png"/>
+          <img class="title-splash2" src="../assets/img/splash3.png"/>
           <div class="title-section">
             <h1 class="title">Daria Calwell</h1>
             <p class="title-small">Web UI developer</p>
@@ -89,29 +93,40 @@ $beau: 'Beau', sans-serif;
 .fadeInEnterActive-4 {
   transition-delay: 1.2s;
 }
+.title-frame {
+  position: absolute;
+  top: -45%;
+  left: 31%;
+  opacity: 0.7;
+  height: 1290px;
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+  opacity: 0.2;
+}
+.title-splash1 {
+  position: absolute;
+  top: -2%;
+  left: 10%;
+  opacity: 0.7;
+  height: 300px;
+  transform: rotate(90deg);
+}
+.title-splash2 {
+  position: absolute;
+  bottom: 5%;
+  right: 10%;
+  opacity: 0.7;
+  height: 300px;
+  transform: rotate(90deg);
+}
 .title-section {
   font-family: $tuesday-night, sans-serif;
-  border-radius: 7px;
   position: relative;
   opacity: 0.6;
   top: 20%;
   left: 40%;
   width: 300px;
   height: 300px;
-  border: 4px double hsla(230, 10%, 12%, 0.5);
-}
-.title-section::before {
-  border-radius: 7px;
-  content: ' ';
-  width: 300px;
-  height: 300px;
-  background-color: hsla(339, 57%, 94%, 0.5);
-  opacity: 1;
-  transform: rotate(45deg);
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  border: 4px double hsla(230, 10%, 12%, 0.5);
 }
 .title {
   white-space: nowrap;
