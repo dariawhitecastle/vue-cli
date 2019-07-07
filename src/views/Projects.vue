@@ -8,25 +8,27 @@
           class="section">
           <div  class="section__content">
             <h3 class="section__title">{{ project.title }}</h3>
-             <transition appear name="slide-fade-right" >
+             <transition appear name="slide-fade-left" >
               <h5 class="section__description">
                 {{ project.description }}
               </h5>
              </transition>
-            <transition appear name="slide-fade-right" appear-active-class='contenAppearClass-2'>
+            <transition appear name="slide-fade-left" appear-active-class='contenAppearClass-2'>
               <p class='section__description-text'>
                 {{ project.descriptionBody }}
               </p>
             </transition>
           </div>
-          <div class="section__img">
-            <img :src="getImage(project.imgUrl)" class="section__img-inner"/>
-            <div class="section__more">
-              <button @click="showPrev(project)" class="section__more-button">Previous</button>
-                <a :href="project.projectUrl" class="section__more-link">Explore</a>
-              <button @click="showNext(project)" class="section__more-button">Next</button>
+          <transition appear name="slide-fade-left">
+            <div class="section__img">
+              <img :src="getImage(project.imgUrl)" class="section__img-inner"/>
+              <div class="section__more">
+                <button @click="showPrev(project)" class="section__more-button">Previous</button>
+                  <a :href="project.projectUrl" class="section__more-link">Explore</a>
+                <button @click="showNext(project)" class="section__more-button">Next</button>
+              </div>
             </div>
-          </div>
+          </transition>  
           <div class="section__project_id">{{project.id}}</div>
         </section>
       </div>
@@ -111,14 +113,14 @@ main {
 .nav {
   grid-area: header-nav;
 }
-.slide-fade-right-enter-active, .contenAppearClass-2 {
+.slide-fade-left-enter-active, .contenAppearClass-2 {
   transition: all .5s ease;
 }
-.slide-fade-right-leave-active {
+.slide-fade-left-leave-active {
   transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
 }
-.slide-fade-right-enter, .slide-fade-right-leave-to {
-  transform: translateX(-50px);
+.slide-fade-left-enter, .slide-fade-left-leave-to {
+  transform: translateX(50px);
   opacity: 0;
 }
 .contenAppearClass-2 {

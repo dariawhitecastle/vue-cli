@@ -4,31 +4,32 @@
       <main class="landing">
         <div class="landing-inner">
           <Nav/>
-          <img class="title-frame" src="../assets/img/geo1.png"/>
+          <img class="title-frame"  src="../assets/img/geo1.png"/>
           <img class="title-splash1" src="../assets/img/splash1.png"/>
           <img class="title-splash1" src="../assets/img/splashsilver.png"/>
           <img class="title-splash2" src="../assets/img/splash3.png"/>
           <div class="title-section">
             <h1 class="title">Daria Calwell</h1>
-            <p class="title-small">Web UI developer</p>
+            <p class="title-small">Web UI/UX developer</p>
           </div>
+          <section  class="landing-tagline-small">
+             I focus on modern web technologies such as React/Redux/Vue/GraphQL/Node to create performant
+             and scalable web applications. Having worked with large Fortune 500 companies as well as startups,
+             I can quickly prototype a design or idea, or perfect and iterate on a large project.
+          </section>
           <div class="landing-tagline">
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-1">
-              <span><span class="landing-tagline__italic">A</span>udacious </span>
+              <span><span class="landing-tagline__italic">I</span>deate </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-2">
-              <span key='2'><span class="landing-tagline__italic">W</span>himsical </span>
-            </transition>
-            <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-3">
-              <span key='3'>
-                <span class="landing-tagline__italic">E</span>ccentric</span>
+              <span key='2'><span class="landing-tagline__italic">D</span>evelop </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-4">
               <span key='4'>
-                <span class="landing-tagline__italic">C</span>raftswoman</span>
+                <span class="landing-tagline__italic">D</span>eploy</span>
             </transition>
           </div>
-        </div>
+        </div> 
       </main>
     </section>
   </div>
@@ -43,7 +44,8 @@ import Nav from '@/components/Nav.vue'; // @ is an alias to /src
     Nav,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+}
 </script>
 
 <style lang="scss">
@@ -52,6 +54,13 @@ export default class Home extends Vue {}
 
 $tuesday-night: 'Tuesday night', sans-serif;
 $beau: 'Beau', sans-serif;
+
+#bubble1,#bubble2, #bubble3, #bubble4, #bubble5  {
+  width: 200pt;
+  height: 200pt;
+  background: blue;
+  border-radius: 100pt;
+}
 
 .landing {
   background: url('../assets/img/Stroke-6.png') no-repeat center center fixed;
@@ -65,9 +74,22 @@ $beau: 'Beau', sans-serif;
   letter-spacing: 2px;
   font-size: 1.5em;
   position: relative;
-  top: 25%;
-  left: 26%;
+  top: 20%;
+  margin: auto;
+  width: 40%;
+  text-align: center;
 }
+.landing-tagline-small {
+  margin: auto;
+  font-family: $beau;
+  letter-spacing: 2px;
+  text-align: center;
+  top: 13%;
+  width: 70%;
+  position: relative;
+  font-size: 1em;
+}
+
 
 .landing-tagline__italic {
   font-style: italic;
