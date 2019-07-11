@@ -56,7 +56,6 @@ export default class Home extends Vue {
 
 $tuesday-night: 'Tuesday night', sans-serif;
 $beau: 'Beau', sans-serif;
-$halfo: 'halfo', 'sans-serif';
 
 #bubble1,#bubble2, #bubble3, #bubble4, #bubble5  {
   width: 200pt;
