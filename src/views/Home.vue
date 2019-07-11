@@ -10,26 +10,28 @@
           <img class="title-splash2" src="../assets/img/splash3.png"/>
           <div class="title-section">
             <h1 class="title">Daria Calwell</h1>
-            <p class="title-small">Web UI/UX developer</p>
+            <h1 class="title-small">Web UI/UX developer</h1>
           </div>
           <section  class="landing-tagline-small">
-             I focus on modern web technologies such as React/Redux/Vue/GraphQL/Node to create performant
+            <p>
+             I focus on modern web technologies such as React/Redux/Vue/GraphQL/Node to create performant 
              and scalable web applications. Having worked with large Fortune 500 companies as well as startups,
              I can quickly prototype a design or idea, or perfect and iterate on a large project.
+             </p>
           </section>
           <div class="landing-tagline">
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-1">
-              <span><span class="landing-tagline__italic">I</span>deate </span>
+              <span><span class="landing-tagline__italic">I</span>deating </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-2">
-              <span key='2'><span class="landing-tagline__italic">D</span>evelop </span>
+              <span key='2'><span class="landing-tagline__italic">P</span>rototyping </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-4">
               <span key='4'>
-                <span class="landing-tagline__italic">D</span>eploy</span>
+                <span class="landing-tagline__italic">P</span>olishing</span>
             </transition>
           </div>
-        </div> 
+        </div>
       </main>
     </section>
   </div>
@@ -54,6 +56,7 @@ export default class Home extends Vue {
 
 $tuesday-night: 'Tuesday night', sans-serif;
 $beau: 'Beau', sans-serif;
+$halfo: 'halfo', 'sans-serif';
 
 #bubble1,#bubble2, #bubble3, #bubble4, #bubble5  {
   width: 200pt;
@@ -67,14 +70,13 @@ $beau: 'Beau', sans-serif;
   background-size: contain;
   height: 100vh;
   width: 100vw;
- 
 }
 .landing-tagline {
   font-family: $beau;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   font-size: 1.5em;
   position: relative;
-  top: 20%;
+  top: 14%;
   margin: auto;
   width: 40%;
   text-align: center;
@@ -84,12 +86,11 @@ $beau: 'Beau', sans-serif;
   font-family: $beau;
   letter-spacing: 2px;
   text-align: center;
-  top: 13%;
+  top: 10%;
   width: 70%;
   position: relative;
   font-size: 1em;
 }
-
 
 .landing-tagline__italic {
   font-style: italic;
@@ -120,7 +121,6 @@ $beau: 'Beau', sans-serif;
   top: -45%;
   left: 31%;
   opacity: 0.7;
-  height: 1290px;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
 }
@@ -142,15 +142,15 @@ $beau: 'Beau', sans-serif;
   font-family: $tuesday-night, sans-serif;
   position: relative;
   opacity: 0.6;
+  margin: auto;
   top: 20%;
-  left: 40%;
   width: 300px;
   height: 300px;
 }
 .title {
   white-space: nowrap;
   font-weight: unset;
-  letter-spacing: 5px;
+  letter-spacing: 8px;
   font-size: 125px;
   position: relative;
   right: 57%;
@@ -161,7 +161,7 @@ $beau: 'Beau', sans-serif;
   position: relative;
   letter-spacing: 3px;
   white-space: nowrap;
-  font-size: 45px;
+  font-size: 30px;
   bottom: 80%;
   margin: auto;
 }
