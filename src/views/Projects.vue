@@ -101,7 +101,9 @@ export default class Projects extends Vue {
 @import '../assets/css/main.scss';
 @import url('../assets/css/fonts.scss');
 
-$alegreya: 'Alegreya Sans';
+// $alegreya: 'Alegreya Sans';
+$beau: 'Beau', sans-serif;
+
 main {
   background: url('../assets/img/Stroke-5.png') no-repeat center center fixed;
   background-size: 90%;
@@ -127,6 +129,7 @@ main {
    transition-delay: 0.3s;
 }
 .section__title {
+  font-family: $beau;
   font-size: 45px;
   margin: 0;
   position: relative;
@@ -137,8 +140,8 @@ main {
   overflow: hidden;
   position: relative;
   font-weight: 300;
-  font-family: $alegreya;
-  font-size: 20px;
+  font-size: 18px;
+  padding: 2px;
   background-color: hsla(0, 0%, 98%, 0.68);
 }
 
@@ -166,7 +169,7 @@ main {
   font-size: 80px;
 }
 .section__more {
-  font-family: $alegreya;
+  font-family: $beau;
   height: 40px;
   margin: 0 1em;
   font-size: 20px;
@@ -211,7 +214,7 @@ main {
   z-index: 50;
 }
 .section__description-text {
-  font-family: "Alegreya Sans";
+  font-weight: 100;
   line-height: 1.5em;
   letter-spacing: 1.5px;
   background-color: hsla(13, 100%, 95%, 0.81);
