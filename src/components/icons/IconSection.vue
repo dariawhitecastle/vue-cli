@@ -1,6 +1,6 @@
 <template>
   <div class='icons__section'>
-     <a target="_blank" rel="noopener noreferrer" href="https://github.com/DariaDesiderata">
+     <a target="_blank" rel="noopener noreferrer" href="https://github.com/dariawhitecastle">
       <icon-base 
         width="80"
         height="80"
@@ -20,7 +20,7 @@
           <icon-linkedin/>
       </icon-base>
     </a> 
-    <router-link to="/contact"> 
+    <router-link to="/contact-form"> 
       <icon-base 
         width="80"
         height="80"
@@ -29,16 +29,7 @@
         >
           <icon-gmail/>
       </icon-base>
-    </router-link>  
-    <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/milknhonnee_art/"> 
-      <icon-base 
-        width="80"
-        height="80"
-        icon-name="instagram"
-        class="icon__section-icon">
-          <icon-instagram/>
-      </icon-base>
-    </a>  
+    </router-link>
   </div>  
 </template>
 

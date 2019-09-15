@@ -11,17 +11,22 @@ export default new Router({
     {
       path: '/',
       name: 'main',
-      component: Home,
+      component: Home
     },
     {
       path: '/projects',
       name: 'projects',
-      component: () => import('./views/Projects.vue'),
+      component: () => import('./views/Projects.vue')
     },
     {
       path: '/contact',
       name: 'contact',
-      component: () => import('./views/Contact.vue'),
+      component: () => import('./views/Contact.vue')
     },
-  ],
+    {
+      path: '/contact-form',
+      name: 'contactForm',
+      component: () => import('./components/ContactForm.vue')
+    }
+  ]
 });
