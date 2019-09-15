@@ -24,7 +24,7 @@
               <img :src="getImage(project.imgUrl)" class="section__img-inner"/>
               <div class="section__more">
                 <button @click="showPrev(project)" class="section__more-button">Previous</button>
-                  <a :href="project.projectUrl" class="section__more-link">Explore</a>
+                  <!-- <a :href="project.projectUrl" class="section__more-link">Explore</a> -->
                 <button @click="showNext(project)" class="section__more-button">Next</button>
               </div>
             </div>
@@ -42,8 +42,9 @@ import projects from '@/common/projects';
 import wanderersLogo from '../assets/img/wanderers_logo.png';
 import bakerShop from '../assets/img/baker_shop.png';
 import bakerForm from '../assets/img/baker_form.png';
-import sampleDash from '../assets/img/sample_dash.png';
-import requestWizard from '../assets/img/request_wizard.png';
+import parForm from '../assets/img/form.png';
+import coloradoStreetArt from '../assets/img/About.png'
+import loginForm from '../assets/img/Loginform.png'
 
 @Component({
   components: {
@@ -57,8 +58,9 @@ export default class Projects extends Vue {
     wanderersLogo,
     bakerShop,
     bakerForm,
-    sampleDash,
-    requestWizard,
+    parForm,
+    coloradoStreetArt,
+    loginForm
   };
 
   projects = projects;
@@ -146,7 +148,6 @@ main {
 }
 
 .section__img {
-  border: 1px solid hsla(339, 6%, 46%, 0.3);
   z-index: 5;
   position: relative;
 }
@@ -156,7 +157,6 @@ main {
 
 .section__img img {
   filter: grayscale(60%);
-  width: 90%;
   display: block;
   margin: 5% auto;
 }
@@ -186,6 +186,7 @@ main {
   color: inherit;
 }
 .section__more-button {
+  margin: 0 1em;
   padding: 5px 10px;
   background-color: hsla(13, 100%, 95%, 0.81);
   border: none;
