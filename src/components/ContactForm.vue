@@ -4,9 +4,6 @@
   <form
     class="contact__form"
     name="contact-form"
-    method="post"
-    data-netlify="true"
-    data-netlify-honeypot="bot-field"
     >
       <label class="contact__label">Your name</label>
       <input class="contact__input" value="" type="text"/>
@@ -14,17 +11,43 @@
       <input class="contact__input" value="" type="text" />
       <label class="contact__label">Inquiry</label>
       <textarea class="contact__input" value="" type="text" />
-      <button class="contact__submit">Submit</button>
+      <button class="contact__submit" @click="handleSubmit()">Submit</button>
     </form>
   </div>
 </template>
 
 <script>
-import { Component, Vue } from 'vue-property-decorator';
-export default class ContactForm extends Vue {}
+import { Vue } from 'vue-property-decorator';
+import axios from 'axios'
+export default class ContactForm extends Vue {
+  encode (data) {
+    return Object.keys(data)
+      .map(
+        key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+      )
+      .join("&");
+  }
+  handleSubmit () {
+    this.$router.push('/submitted')
+    // const axiosConfig = {
+    //   header: { "Content-Type": "application/x-www-form-urlencoded" }
+    // };
+    // axios.post(
+    //   "/",
+    //   this.encode({
+    //     "form-name": "contact-form",
+    //     ...this.form
+    //   }),
+    //   axiosConfig
+    // ).then(() => {
+        
+      // })
+  }
+}
+
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 @import url('../assets/css/fonts.scss');
 
 $tuesday-night: 'Tuesday night', sans-serif;
