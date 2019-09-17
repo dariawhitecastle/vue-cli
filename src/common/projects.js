@@ -8,7 +8,7 @@ const projects = [
       Working on this project allowed me to learn various aspects of WebGL, manipulating objects
       on Canvas and mapping data to visual display of objects.`,
     imgUrl: 'wanderersLogo',
-    projectUrl: 'https://wanderers-interactive.com/',
+    projectUrl: 'https://wanderers-interactive.com/'
   },
   {
     id: 2,
@@ -18,7 +18,7 @@ const projects = [
         This site will allow local businesses view and contact street artists for custom murals. Built as a single page application with Gatsby framework and custom 
         styles and animations.`,
     imgUrl: 'coloradoStreetArt',
-    projectUrl: '../assets/img/About.png',
+    projectUrl: '../assets/img/About.png'
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ const projects = [
     descriptionBody:
       'Experimenting with new design tool Figma to build a simple login form design.',
     imgUrl: 'loginForm',
-    projectUrl: '../assets/img/loginForm',
+    projectUrl: '../assets/img/loginForm'
   },
   {
     id: 4,
@@ -37,18 +37,18 @@ const projects = [
     descriptionBody: `As a full stack developer I was involved in full system design conversations, bridging the gap between
     front end architecture, user experience, business requirements and database management. We conducted regular meetings with client to adjust business requirements and provide demos `,
     imgUrl: 'parForm',
-    projectUrl: '../assets/img/parForm',
+    projectUrl: '../assets/img/parForm'
   },
   {
     id: 5,
-    title: 'E-Commerse',
+    title: 'E-Commerce',
     description:
       'Online shopping experience for users shopping across multiple stores with inventory split into different categories',
     descriptionBody: `As a UI developer on the Experiece Team at Baker Technologies I utilized React/Redux technologies to create a styled interfaced 
     to provide online shoppers with various filtering, sorting and viewing options for the specific products at different stores across the US and Canada.
     Other tech used in the project are REST API, GraphQL/Apollo, Scss/Css/Keyframe animations, Webpack/Babel`,
     imgUrl: 'bakerShop',
-    projectUrl: 'https://app.trybaker.com/location',
+    projectUrl: 'https://app.trybaker.com/location'
   },
   {
     id: 6,
@@ -59,8 +59,8 @@ const projects = [
        and dynamically updated dialogue windows. Complex state manipulations were handled using a combination or Redux 
        and Apollo with React for the view layer`,
     imgUrl: 'bakerForm',
-    projectUrl: '../assets/img/bakerForm.mp4',
-  },
+    projectUrl: '../assets/img/bakerForm.mp4'
+  }
 ];
 
 export default projects;
