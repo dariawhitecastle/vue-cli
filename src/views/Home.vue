@@ -127,11 +127,20 @@ $beau: 'Beau', sans-serif;
   opacity: 0.7;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  @media (min-width: 1330px) {
+    top: -45%;
+    left: 31%;
+  }
   @media (min-width: 1680px) {
     top: -35%;
     left: 31%;
   }
-  @media (min-width: 2560px) {
+   @media (min-width: 2100px) {
+    top: -40%;
+    left: 32%;
+    width: 650px;
+  }
+  @media (min-width: 2500px) {
     top: -37%;
     left: 31%;
     width: 800px;
