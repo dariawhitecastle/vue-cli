@@ -3,32 +3,37 @@
     <section class="home-page">
       <main class="landing">
         <div class="landing-inner">
-          <Nav/>
-          <img class="title-frame"  src="../assets/img/geo1.png"/>
-          <img class="title-splash1" src="../assets/img/splash1.png"/>
-          <img class="title-splash1" src="../assets/img/splashsilver.png"/>
-          <img class="title-splash2" src="../assets/img/splash3.png"/>
+          <Nav />
+          <img class="title-frame" src="../assets/img/geo1.png" />
+          <img class="title-splash1" src="../assets/img/splash1.png" />
+          <img class="title-splash1" src="../assets/img/splashsilver.png" />
+          <img class="title-splash2" src="../assets/img/splash3.png" />
           <div class="title-section">
             <h1 class="title">Daria Calwell</h1>
             <h1 class="title-small">Web UI/UX developer</h1>
           </div>
-          <section  class="landing-tagline-small">
+          <section class="landing-tagline-small">
             <p>
-             I focus on modern web technologies such as React/Redux/Vue/GraphQL/Node to create performant 
-             and scalable web applications. Having worked with large Fortune 500 companies as well as startups,
-             I can quickly prototype a design or idea, or perfect and iterate on a large project.
-             </p>
+              I focus on modern web technologies such as React/Redux/Vue/GraphQL/Node to create performant
+              and scalable web applications. Having worked with large Fortune 500 companies as well as startups,
+              I can quickly prototype a design or idea, or perfect and iterate on a large project.
+            </p>
           </section>
           <div class="landing-tagline">
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-1">
-              <span><span class="landing-tagline__italic">I</span>deating </span>
+              <span>
+                <span class="landing-tagline__italic">I</span>deating
+              </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-2">
-              <span key='2'><span class="landing-tagline__italic">P</span>rototyping </span>
+              <span key="2">
+                <span class="landing-tagline__italic">P</span>rototyping
+              </span>
             </transition>
             <transition appear appear-class="fadeIn" appear-active-class="fadeInEnterActive-4">
-              <span key='4'>
-                <span class="landing-tagline__italic">P</span>olishing</span>
+              <span key="4">
+                <span class="landing-tagline__italic">P</span>olishing
+              </span>
             </transition>
           </div>
         </div>
@@ -122,6 +127,15 @@ $beau: 'Beau', sans-serif;
   opacity: 0.7;
   -webkit-transform: rotate(90deg);
   transform: rotate(90deg);
+  @media (min-width: 1680px) {
+    top: -35%;
+    left: 31%;
+  }
+  @media (min-width: 2560px) {
+    top: -37%;
+    left: 31%;
+    width: 800px;
+  }
 }
 .title-splash1 {
   position: absolute;
