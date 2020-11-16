@@ -1,9 +1,11 @@
 <template>
   <ul class="mainNav">
     <li><router-link to="/">Main</router-link></li>
-    <li> / <li>
+    <li>/</li>
+    <li></li>
     <li><router-link to="/projects">Projects</router-link></li>
-    <li> / <li>
+    <li>/</li>
+    <li></li>
     <li><router-link to="/contact">Collaborate </router-link></li>
   </ul>
 </template>
@@ -11,11 +13,12 @@
 <style lang='scss' scoped>
 @import url("../assets/css/fonts.scss");
 
-$beau: "Beau", sans-serif;
+$theater: "Theater", sans-serif;
 
 .mainNav {
-  font-family: $beau;
-  letter-spacing: 3px;
+  margin-top: 5px;
+  font-family: $theater;
+  letter-spacing: 5px;
   list-style: none;
   text-align: center;
   display: flex;
