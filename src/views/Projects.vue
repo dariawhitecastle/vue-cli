@@ -28,7 +28,7 @@
                 <button @click="showNext(project)" class="section__more-button">Next</button>
               </div>
             </div>
-          </transition>  
+          </transition>
           <div class="section__project_id">{{project.id}}</div>
         </section>
       </div>
@@ -43,8 +43,8 @@ import wanderersLogo from '../assets/img/wanderers_logo.png';
 import bakerShop from '../assets/img/baker_shop.png';
 import bakerForm from '../assets/img/baker_form.png';
 import parForm from '../assets/img/form.png';
-import coloradoStreetArt from '../assets/img/About.png'
-import loginForm from '../assets/img/Loginform.png'
+import coloradoStreetArt from '../assets/img/About.png';
+import loginForm from '../assets/img/Loginform.png';
 
 @Component({
   components: {
@@ -60,7 +60,7 @@ export default class Projects extends Vue {
     bakerForm,
     parForm,
     coloradoStreetArt,
-    loginForm
+    loginForm,
   };
 
   projects = projects;
@@ -103,7 +103,6 @@ export default class Projects extends Vue {
 @import '../assets/css/main.scss';
 @import url('../assets/css/fonts.scss');
 
-// $alegreya: 'Alegreya Sans';
 $beau: 'Beau', sans-serif;
 
 main {
@@ -170,6 +169,7 @@ main {
 }
 .section__more {
   font-family: $beau;
+  grid-area: more;
   height: 40px;
   margin: 0 1em;
   font-size: 20px;
@@ -231,7 +231,5 @@ main {
   margin-left: 200px;
   grid-area: section-id;
 }
-.section__more {
-  grid-area: more;
-}
+
 </style>
