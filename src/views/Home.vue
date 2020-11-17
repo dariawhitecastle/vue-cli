@@ -8,6 +8,8 @@
         <div class="landing" />
         <div class="right-section">
           <div class="title-section">
+            <h1 class="watermark">HELLO</h1>
+            <p class="watermark-small">My name is</p>
             <h1 class="title">Daria Calwell</h1>
             <h1 class="title-small">Web UI/UX developer</h1>
           </div>
@@ -20,33 +22,22 @@
             </p>
           </section>
           <div class="landing-tagline">
-            <transition
-              appear
-              appear-class="fadeIn"
-              appear-active-class="fadeInEnterActive-1"
-            >
-              <span>
-                <span class="landing-tagline__italic">I</span>deating
-              </span>
-            </transition>
-            <transition
-              appear
-              appear-class="fadeIn"
-              appear-active-class="fadeInEnterActive-2"
-            >
-              <span key="2">
-                <span class="landing-tagline__italic">P</span>rototyping
-              </span>
-            </transition>
-            <transition
-              appear
-              appear-class="fadeIn"
-              appear-active-class="fadeInEnterActive-4"
-            >
-              <span key="4">
-                <span class="landing-tagline__italic">P</span>olishing
-              </span>
-            </transition>
+            <button class="button-explore">
+              Explore
+              <svg class="button-svg">
+                <g stroke="rgba(61, 51, 58, 0.7)" fill="transparent">
+                  <line y1="75" x1="70" x2="155" y2="75" />
+                  <polyline points="150 67 157 75 150 81.78" />
+                  <circle
+                    cx="296"
+                    cy="75"
+                    r="35"
+                    transform="rotate(180 224.67 30.94) scale(1, -1) translate(0,
+              -61)"
+                  />
+                </g>
+              </svg>
+            </button>
           </div>
         </div>
       </main>
@@ -74,6 +65,101 @@ export default class Home extends Vue {
 $theater: 'Theater', sans-serif;
 $beau: 'Beau', sans-serif;
 
+.watermark {
+  position: absolute;
+  top: 0%;
+  right: -3%;
+  text-shadow: 0 0 7px rgba(61, 51, 58, 0.1), 0 0 7px rgba(61, 51, 58, 0.1), 0 0 7px rgba(61, 51, 58, 0.1), 0 0 7px rgba(61, 51, 58, 0.1);
+  color: transparent;
+  font-size: 7em;
+  letter-spacing: 1em;
+  @media (max-width: 1024px) {
+    font-size: 5em;
+    text-shadow: 0 0 4px rgba(243, 238, 242, 0.1), 0 0 4px rgba(243, 238, 242, 0.1), 0 0 4px rgba(243, 238, 242, 0.1), 0 0 4px rgba(243, 238, 242, 0.1);
+  }
+  @media (max-width: 414px) {
+    top: 5%;
+    font-size: 3em;
+    text-shadow: 0 0 3px rgba(243, 238, 242, 0.1), 0 0 3px rgba(243, 238, 242, 0.1), 0 0 3px rgba(243, 238, 242, 0.1), 0 0 3px rgba(243, 238, 242, 0.1);
+  }
+  @media (max-width: 375px) {
+   letter-spacing: .8em;
+  }
+}
+.watermark-small {
+  position: absolute;
+  top: 20%;
+  right: 0%;
+  text-shadow: 0 0 3px rgba(61, 51, 58, 0.1), 0 0 3px rgba(61, 51, 58, 0.1), 0 0 3px rgba(61, 51, 58, 0.1), 0 0 3px rgba(61, 51, 58, 0.1);
+  color: transparent;
+  font-size: 2em;
+  letter-spacing: 1em;
+  @media (max-width: 1024px) {
+     font-size: 2em;
+     top: 17%;
+     text-shadow: 0 0 2px rgba(243, 238, 242, 0.1), 0 0 2px rgba(243, 238, 242, 0.1), 0 0 2px rgba(243, 238, 242, 0.1), 0 0 2px rgba(243, 238, 242, 0.1);
+   }
+  @media (max-width: 414px) {
+    top: 17%;
+    font-size: 1em;
+    text-shadow: 0 0 2px rgba(243, 238, 242, 0.1), 0 0 2px rgba(243, 238, 242, 0.1), 0 0 2px rgba(243, 238, 242, 0.1), 0 0 2px rgba(243, 238, 242, 0.1);
+  }
+}
+
+.button-explore {
+  border: none;
+  font-family: $theater;
+  font-size: 2.5em;
+  letter-spacing: 1em;
+  padding: 3px;
+  padding-left: 22px;
+  background: transparent;
+  color:  rgba(61, 51, 58, 0.7);
+  z-index: 8;
+  &:hover {
+    color: #741166;
+    background: transparent;
+    letter-spacing: 1.1em;
+    svg > g {
+    stroke: #741166;
+    }
+  }
+  &:focus {
+    outline: none;
+    border: none;
+  }
+  @media (max-width: 1024px) {
+    color:  #741166;
+    text-shadow: 0 0 3px rgba(243, 238, 242, 0.1), 0 0 3px rgba(243, 238, 242, 0.1), 0 0 3px rgba(243, 238, 242, 0.1), 0 0 3px rgba(243, 238, 242, 0.1);
+      svg > g {
+      stroke: #741166;
+    }
+  }
+  @media (max-height: 750px) {
+     font-size: 1.5em;
+   }
+
+   @media (max-width: 375px) {
+     letter-spacing: .5em;
+      &:hover {
+        width: 300px;
+        letter-spacing: .6em;
+      }
+   }
+
+}
+.button-svg {
+  position: absolute;
+  bottom: 10%;
+  right: -3%;
+   @media (max-width: 1024px) {
+      bottom: 4%;
+      right: 19%;
+   }
+   @media (max-width: 414px) {
+     display: none;
+   }
+}
 .main-wrapper {
   display: flex;
   flex-direction: row;
@@ -86,6 +172,7 @@ $beau: 'Beau', sans-serif;
 .right-section {
   width: 50%;
   background: rgb(248, 202, 233, 0.2);
+  z-index: 8;
    @media (max-width: 1024px) {
     position: absolute;
     top: 15%;
@@ -101,7 +188,6 @@ $beau: 'Beau', sans-serif;
     height: 85%;
     width: 80%;
   }
-
 }
 
 .title-section {
@@ -120,6 +206,8 @@ $beau: 'Beau', sans-serif;
   font-weight: unset;
   letter-spacing: 10px;
   font-size: 100px;
+  margin-top: 2em;
+  margin-bottom: 0;
   @media (max-width: 1330px) {
    font-size: 80px
   }
@@ -137,6 +225,7 @@ $beau: 'Beau', sans-serif;
    @media (max-width: 414px) {
     font-size: 20px
   }
+
 }
 
 .landing {
@@ -152,20 +241,14 @@ $beau: 'Beau', sans-serif;
   }
 }
 .landing-tagline {
-  font-family: $beau;
-  letter-spacing: 5px;
-  font-size: 1.5em;
-  width: 40%;
   text-align: center;
-  margin: 1em auto;
-  margin-bottom: 0;
    @media (max-width: 1024px) {
-     width: 100%;
+    width: 100%;
     color: white;
     opacity: .8;
    }
   @media (min-width: 1330px) {
-    margin-top: 4em;
+    margin-top: 2em;
   }
 }
 .landing-tagline-small {
@@ -175,13 +258,19 @@ $beau: 'Beau', sans-serif;
   text-align: center;
   width: 70%;
   font-size: 1em;
-   @media (max-width: 1024px) {
-    color: white;
-    opacity: .8;
-   }
-   @media (max-height: 667px) {
-    font-size: .75em
-   }
+  background: rgba(61, 51, 58, 0.7);
+  padding: 1em;
+  color: white;
+  opacity: .8;
+  @media (max-width: 1024px) {
+    background: transparent;
+  }
+  @media (max-height: 667px) {
+  font-size: .75em
+  }
+  @media (max-width: 360px) {
+      padding-top: 0;
+  }
 }
 
 .landing-tagline__italic {
